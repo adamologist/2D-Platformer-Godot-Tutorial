@@ -89,6 +89,11 @@ region = Rect2(224, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7naf2"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_x6ewo")
@@ -179,9 +184,8 @@ script = ExtResource("1_bc60k")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -12)
 sprite_frames = SubResource("SpriteFrames_7naf2")
-animation = &"jump"
+animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.85444
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -5)

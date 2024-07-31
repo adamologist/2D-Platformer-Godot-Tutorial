@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dxqk32vc1y6p4"]
+[gd_scene load_steps=14 format=3 uid="uid://dxqk32vc1y6p4"]
 
 [ext_resource type="PackedScene" uid="uid://du5kdkryd48lr" path="res://scenes/player.tscn" id="1_xeoks"]
 [ext_resource type="Texture2D" uid="uid://b2gk1n4wposly" path="res://assets/sprites/world_tileset.png" id="2_qg30e"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bqnrr3saqnk3r" path="res://scenes/coin.tscn" id="4_g4u20"]
 [ext_resource type="PackedScene" uid="uid://drbcum32qsnqt" path="res://scenes/killzone.tscn" id="5_g12qn"]
 [ext_resource type="PackedScene" uid="uid://cm8thxn8fsmxw" path="res://scenes/slime.tscn" id="6_7rtgw"]
+[ext_resource type="FontFile" uid="uid://cjxn6s048ulcv" path="res://assets/fonts/PixelOperator8.ttf" id="7_lql6u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8p3wg"]
 texture = ExtResource("2_qg30e")
@@ -533,3 +534,16 @@ position = Vector2(-116, -46)
 
 [node name="Slime" parent="." instance=ExtResource("6_7rtgw")]
 position = Vector2(735, 11)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="jump instructions" type="Label" parent="Labels"]
+offset_left = -39.0
+offset_top = -76.0
+offset_right = 173.0
+offset_bottom = -34.0
+theme_override_fonts/font = ExtResource("7_lql6u")
+theme_override_font_sizes/font_size = 8
+text = "Space on keyboard
+A on Controller
+To Jump"
